@@ -4,9 +4,9 @@ int g;
 boolean[][] grid;
 
 void setup() {
-  size(1000, 500);
-  w = 100;
-  h = 50;
+  size(800, 800);
+  w = 80;
+  h = 80;
   g = 0;
   grid = new boolean[h][w];
   for (int i = 0; i < h; i++) {
@@ -14,7 +14,7 @@ void setup() {
       if (random(1) < .4) grid[i][j] = true;
     }
   }
-  frameRate(30);
+  frameRate(20);
 }
 
 void draw() {
